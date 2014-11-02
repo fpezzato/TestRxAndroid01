@@ -9,7 +9,7 @@ import rx.Observable;
  */
 public interface Movies {
 
-	@GET("/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&page={page}")
+	@GET("/discover/movie?primary_release_year=2010&sort_by=vote_average.desc")
 	Observable<MoviesResponse> best2010(@Query("page") Integer page);
 
 }
