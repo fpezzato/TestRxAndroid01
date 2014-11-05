@@ -16,7 +16,7 @@ import retrofit.client.OkClient;
 public class Endpoint {
 	RestAdapter mRestAdapter;
 	Proxy proxy =
-		new Proxy(Proxy.Type.HTTP, InetSocketAddress.createUnresolved("10.100.10.179", 8888));
+		new Proxy(Proxy.Type.HTTP, InetSocketAddress.createUnresolved("192.168.1.3", 8888));
 
 	OkClient okClient = new OkClient(new OkHttpClient().setProxy(proxy));
 
